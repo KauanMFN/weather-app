@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export const WeatherForm = () => {
-    const apiKey = "8623a749748564267bad93aea769aad5"
+    const apiKey = import.meta.env.VITE_API_KEY
 
     const [city, setCity] = useState()
     const [temp, setTemp] = useState()
